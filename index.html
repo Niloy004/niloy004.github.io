@@ -8,6 +8,10 @@
         <title>DROIDZ</title>
 
         <link rel="stylesheet" href="css/style.css">
+
+        <!-- swiper css -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
         <!-- Box-icons -->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
@@ -116,28 +120,91 @@
        </section>
 
        <!-- Skills -->
-        <section class="skills-container" id="skills">
+        <section class="skill-container" id="skills">
             <h2 class="heading">My <span>Skills</span></h2>
 
             <div class="skill-wrapper">
-                <div class="skill-box">
-                    <div class="skill-content">
-                        <div class="skill-slide">
+                <div class="skill-box mySwiper">
+                    <div class="skill-content swiper-wrapper">
+                        <div class="skill-slide swiper-slide">
                             <i class='bx bx-code-alt'></i>
-                            <h3>Languages</h3>
-                            <div class="img-container">
-                                <h4> <Span>Most Used</Span></h4>
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg" />
-                            </div>                             
+                            <table class="skill-table">
+                                <tbody>
+                                    <tr>
+                                        <th colspan="2"><h3>Languages</h3></th>
+                                    </tr>
+                                    <tr>
+                                        <td class="key"><h4><span>Favourite: </span></h4> </td>
+                                        <td class="value">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key"><h4><span>Most Used: </span></h4> </td>
+                                        <td class="value">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" />
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key"><h4><span>Other known: </span></h4> </td>
+                                        <td class="value">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg" />
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="skill-slide swiper-slide">
+                            <i class='bx bx-code-alt'></i>
+                            <table class="skill-table">
+                                <tbody>
+                                    <tr>
+                                        <th colspan="2"><h3>Frameworks</h3></th>
+                                    </tr>
+                                    <tr>
+                                        <td class="key"><h4><span>Favourite: </span></h4> </td>
+                                        <td class="value">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key"><h4><span>Most Used: </span></h4> </td>
+                                        <td class="value">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" />
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key"><h4><span>Other known: </span></h4> </td>
+                                        <td class="value">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg" />
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
 
        <!-- JavaScript Link -->
        <script src="js/script.js"></script>
+
+       <!-- Swiper JS -->
+       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     </body>
 </html>
