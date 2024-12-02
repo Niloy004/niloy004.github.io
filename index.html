@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/style.css">
 
         <!-- swiper css -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 
         <!-- Box-icons -->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -29,6 +29,9 @@
             </nav>
 
             <div class="bx bx-moon" id="darkMode-icon"></div>
+
+            <div class="bx bx-menu" id="menu-icon"></div>
+
        </header>
 
        <!-- Home Section -->
@@ -108,19 +111,19 @@
                 </div>
                 <div class="edu-box">
                     <img src="https://edunext-dps-durgapur-cf.edunexttechnologies.com/1616430990482_dps_durgapur.jpg" alt="" class="uni-img">
-                    <h2>Durgapur Public School <br>Durgapur</h2>
+                    <h2>D.P.S<br>Durgapur</h2>
                     <a href="https://www.dpsdgp.com/" class="btn">Read More</a>
                 </div>
                 <div class="edu-box">
                     <img src="https://i.pinimg.com/736x/d3/1d/5b/d31d5b8113f76653e99910080bde5d2e.jpg" alt="" class="uni-img">
-                    <h2>Visva Bharati University, <br>Shantiniketan</h2>
+                    <h2>Visva Bharati, <br>Shantiniketan</h2>
                     <a href="https://visvabharati.ac.in/" class="btn">Read More</a>
                 </div>
             </div>
        </section>
 
        <!-- Skills -->
-        <section class="skill-container" id="skills">
+       <section class="skill-container" id="skills">
             <h2 class="heading">My <span>Skills</span></h2>
 
             <div class="skill-wrapper">
@@ -160,33 +163,31 @@
                             </table>
                         </div>
                         <div class="skill-slide swiper-slide">
-                            <i class='bx bx-code-alt'></i>
+                            <i class='bx bxs-devices'></i>
                             <table class="skill-table">
                                 <tbody>
                                     <tr>
                                         <th colspan="2"><h3>Frameworks</h3></th>
                                     </tr>
                                     <tr>
-                                        <td class="key"><h4><span>Favourite: </span></h4> </td>
+                                        <td class="key"><h4><span>Softwares: </span></h4> </td>
                                         <td class="value">
-                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" />
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-plain-wordmark.svg" />
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="key"><h4><span>Most Used: </span></h4> </td>
+                                        <td class="key"><h4><span>Web Design: </span></h4> </td>
                                         <td class="value">
-                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" />
-                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="key"><h4><span>Other known: </span></h4> </td>
+                                        <td class="key"><h4><span>IoT: </span></h4> </td>
                                         <td class="value">
-                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
-                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
-                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg" />
-                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original.svg" />
+                                            <img src="src/image/espressif.png" >
                                         </td>
                                     </tr>
                                 </tbody>
@@ -198,13 +199,43 @@
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
-        </section>
+       </section>
 
-       <!-- JavaScript Link -->
-       <script src="js/script.js"></script>
+       <!-- Contact -->
+       <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me...</span></h2>
+
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" placeholder="John Smith">
+                    <input type="email" placeholder="example@gamil.com">
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Contact Number">
+                    <input type="test" placeholder="Subject">
+                </div>
+                <textarea name="" id="" cols="30" rows="7" placeholder="Message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+       </section>
+
+       <!-- Footer -->
+       <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2024 by Niloy Majumdar | All Rights Reserved</p>
+            </div>
+
+            <div class="footer-iconTop">
+                <a href="#home">
+                    <i class='bx bx-up-arrow-alt' ></i>
+                </a>
+            </div>
+       </footer>
 
        <!-- Swiper JS -->
        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+       <!-- JavaScript Link -->
+       <script src="js/script.js"></script>       
 
     </body>
 </html>
