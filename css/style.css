@@ -24,13 +24,12 @@
     --shadow-color: rgba(0,0,0,0.2);
 }
 
-/* :root{
-    --bg-color: #333;
-    --text-color:  #fdfdfd;
-    --main-color: #00bd7b;
-    --white-color: #fdfdfd;
-    --shadow-color: rgba(0,0,0,0.2);
-} */
+.dark-mode{
+    --bg-color: #022017;
+    --text-color: #fdfdfd;
+    --shadow-color: rgba(0,0,0,0.9);
+}
+
 
 html{
     font-size: 60%;
@@ -69,6 +68,8 @@ body{
      cursor: default;
      margin-right: auto;
 }
+
+
 .navbar a{
     position: relative;
     font-size: 1.7rem;
@@ -172,6 +173,7 @@ section{
 
 .home-content p{
     font-size: 1.8rem;
+    font-weight: 500;
 }
 
 .home-content .social-media a{
@@ -218,6 +220,25 @@ section{
     display: flex;
     justify-content:center ;
     align-items: center;
+    animation: professionRotate 10s ease-out infinite;
+}
+
+@keyframes professionRotate {
+    0%,20%{
+        transform: rotate(0deg);
+    }
+    25%,45%{
+        transform: rotate(-90deg);
+    }
+    50%,70%{
+        transform: rotate(-180deg);
+    }
+    75%,95%{
+        transform: rotate(-270deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
 }
 
 .home .profession-box .profession{
@@ -278,7 +299,7 @@ section{
     position: absolute;
     bottom: -1.75rem;
     right: -2rem;
-    width: 40%;
+    width: 80%;
     pointer-events: none;
 }
 
@@ -309,16 +330,17 @@ span{
     margin-right: 5rem;
     margin-left: 5rem;
 }
-.about-content h2{
+.about-content h1{
     text-align: left;
-    line-height: 1.2;
+    line-height: 2;
 }
 .about-content h3{
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 .about-content p{
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin: 2rem 0 3rem;
+    font-weight: 400;
 }
 
 /* Education Section */
@@ -365,9 +387,9 @@ span{
 }
 
 .edu-box h2{
-    font-size: 2.6rem;
+    font-size: 2rem;
     margin: 1rem 0;
-    margin-bottom: 5rem;
+    margin-bottom: 4.8rem;
 }
 
 /* Skills section */
@@ -377,7 +399,7 @@ span{
     align-items: center;
     flex-direction: column;
     width: 100%;
-    padding: 4rem 1rem;
+    padding: 3rem 1rem;
 }
 
 .skill-container .heading{
@@ -559,7 +581,8 @@ footer{
     .home .profession-container .overlay{
         right: -9rem;
     }
-
+    
+    
 }
 
 @media (max-width: 1024px){
@@ -578,6 +601,10 @@ footer{
     .home .profession-container .overlay{
         right: -15rem
     }
+    .home-img img{
+        width: 70%;
+    }
+   
 }
 
 @media (max-width: 991px){
@@ -623,6 +650,7 @@ footer{
 @media (max-width: 810px){
     #menu-icon{
         display: block;
+        color: var(--main-color);
     }
 
     #darkMode-icon{
@@ -630,6 +658,7 @@ footer{
         right: 7rem;
         font-size: 2.6rem;
         margin-bottom: .1rem;   
+        color: var(--text-color);
     }
 
     .navbar{
@@ -686,4 +715,193 @@ footer{
     .navbar a::before{
         display: none;
     }
+
+    .home{
+        padding: 0 3% 23rem;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home-content h3{
+        font-size: 2.5rem;
+    }
+    .home-content h1{
+        font-size: 5rem;
+    }
+    .home-content .social-media a{
+        margin: 2.5rem .75rem 3rem;
+    }
+
+    .home .profession-container{
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .home .profession-container .profession-box{
+        position: fixed;
+        top: 60%;
+        left: 0;
+        border: 0;
+        width: 100%;
+    }
+
+    .home .profession-box .profession{
+        padding: 0 13px;
+        left: auto;
+        transform-origin: 0;
+    }
+
+    .home .profession-box .profession:nth-child(1){
+        transform: rotate(-90deg) translate(-95px, -235px);
+    }
+
+    .home .profession-box .profession:nth-child(1) i{
+        margin-right: 10;
+    }
+    .home .profession-box .profession:nth-child(2){
+        transform: rotate(0deg) translate(3px, -430px);
+    }
+    .home .profession-box .profession:nth-child(3){
+        transform: rotate(90deg) translate(-50px, -425px);
+    }
+    .home .profession-box .profession:nth-child(4){
+        transform: rotate(180deg) translate(-175px, -360px);
+    }
+    
+    
+    .home .profession-container .overlay{
+        position: fixed;
+        top: 70rem;
+        left: 50%;
+        right: 0;
+        transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
+        border-width: 24rem;
+    }
+
+    .home .profession-box .circle{
+        position: fixed;
+        width: 670px;
+        height: 670px;
+        z-index: -1;
+    }
+
+    .about{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    .about-content h1{
+        text-align: center;
+    }
+
+    .about-img img{
+        width: 70vw;
+        margin-right: 0;
+        margin-top: -2rem;
+    }
+
+    .education h2{
+        margin-bottom: 3rem;
+    }
+
+    .skill-container .skill-wrapper{
+        padding: 5rem 0;
+    }
+
+    .skill-content .skill-slide{
+        padding: 3rem 2rem;
+    }
+
+    .skill-box .swiper-button-next,
+    .skill-box .swiper-button-prev{
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+
+    #darkMode-icon{
+        right: 6rem;
+    }
+
+    .home{
+        /* padding: 0 2% 3rem; */
+    }
+
+    .home .profession-box .profession:nth-child(1){
+        transform: rotate(-90deg) translate(-90px, -245px);
+    }
+
+    .home .profession-box .profession:nth-child(1) i{
+        margin-right: 10;
+    }
+    .home .profession-box .profession:nth-child(2){
+        transform: rotate(0deg) translate(0px, -430px);
+    }
+    .home .profession-box .profession:nth-child(3){
+        transform: rotate(90deg) translate(-47px, -425px);
+    }
+    .home .profession-box .profession:nth-child(4){
+        transform: rotate(180deg) translate(-160px, -360px);
+    }
+    .skill-container{
+        padding: 10rem 1rem;
+    }
+
+    .contact form .input-box input{
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 365px){
+
+    .home .profession-container .overlay{
+        position: fixed;
+        top: 65rem;
+        left: 50%;
+        right: 0;
+        transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
+        border-width: 24rem;
+    }
+
+    .home-content h3{
+        font-size: 2.0rem;
+        font-weight: 700;
+        line-height: .3;
+    }
+    
+    .home-content h1{
+        font-size: 4.0rem;
+        font-weight: 700;
+    
+    }
+
+    .home .profession-box .circle{
+        position: fixed;
+        width: 670px;
+        height: 670px;
+        z-index: -1;
+    }
+
+    .about-img img{
+        width: 90vw;
+    }
+
+    .footer{
+        flex-direction: column-reverse;
+    }
+
+    .footer p{
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+
 }
